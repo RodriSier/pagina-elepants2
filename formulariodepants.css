@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body{
+    background: white;
+    margin: 0;
+    font-family: monospace;
+    background-color: blueviolet;
+
+}
+h1{
+    color: violet;
+    text-align: center;
+    background-color: aqua;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    grid-auto-rows: 520px;
+    grid-gap: 20px;
+    width: ;
+    
+    
+}
+.gallery__img{
+    width: 300px;
+object-fit: cover;
+border-radius: 25px;
+}
+
+.gallery__item{
+    position: relative;
+    
+}
+.gallery__title{
+    position: absolute;
+    bottom: 0%;
+    color: bisque;
+    background: linear-gradient(white,rgb(231, 8, 83));
+    width: 50%;
+    margin: 0%;
+    padding: 10px;
+
+}
+/* esto es tablet */
+@media (max-width:768px) and (min-width: 321px) {
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    } 
+    /*cierra tablet*/
+}
+
+/*esti es escritotio*/
+@media (min-width: 769px){
+    .gallery-container{
+        grid-template-columns: repeat(5, 1fr);
+        width: 90%;
+        margin: auto;
+
+    }
+    
+}
+
+
+@media all and (max-width: 320px) {
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+     
+    }   
+
+}
+
+
+
